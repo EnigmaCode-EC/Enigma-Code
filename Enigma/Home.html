@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Enigma Code | Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      height: 100%;
+      background-image: url('Fondograffiti.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .menu-lateral {
+      width: 200px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .menu-lateral a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .menu-lateral a:hover {
+      color: #ff4747;
+    }
+
+    .contenido {
+      flex: 1;
+      padding: 60px 40px;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    .logo h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 4em;
+      margin-top: 20px;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    .frase-impacto {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 40px auto;
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      background-color: #ff4747;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #e60000;
+    }
+
+    .testimonios {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .testimonio {
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testimonio strong {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ff4747;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="contenido">
+      <div class="logo">
+        <img src="logotipo.jpg" alt="Logotipo Enigma Code">
+        <h1>Enigma Code</h1>
+      </div>
+
+      <div class="frase-impacto">
+        "Camisetas que hablan por ti. Estilo callejero, esencia urbana. ¡Hazte notar!"
+      </div>
+
+      <div class="cta">
+        <a href="Contacto.html">Contáctanos</a>
+        <a href="Productos.html">Comprar Ahora</a>
+      </div>
+
+      <div class="testimonios">
+        <h2 style="text-align:center; margin-bottom: 20px;">Testimonios</h2>
+        <div class="testimonio">
+          "Nunca me había sentido tan identificado con una prenda. Enigma Code es real."
+          <strong>– Kevin, Medellín</strong>
+        </div>
+        <div class="testimonio">
+          "El diseño y la calidad son brutales, me preguntan siempre dónde la compré."
+          <strong>– Laura, Bogotá</strong>
+        </div>
+        <div class="testimonio">
+          "Marca con actitud. Perfecta para quienes viven su propio código."
+          <strong>– Andrés, Cali</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-lateral">
+      <a href="Home.html">Home</a>
+      <a href="SobreNosotros.html">Sobre Nosotros</a>
+      <a href="Productos.html">Productos</a>
+      <a href="Contacto.html">Contacto</a>
+      <a href="FAQ.html">Preguntas Frecuentes</a>
+      <a href="Terminos.html">Términos y Condiciones</a>
+      <a href="Carrito.html">Carrito</a>
+      <a href="Checkout.html">Checkout/Pago</a>
+    </div>
+  </div>
+</body>
+</html>

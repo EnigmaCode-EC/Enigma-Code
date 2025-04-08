@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout/Pago - Enigma Code</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('Fondograffiti.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .formulario {
+      max-width: 500px;
+      margin: 60px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #00ff91;
+    }
+
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #00ff91;
+      color: black;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00cc73;
+    }
+
+    .producto-info {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .producto-info img {
+      width: 150px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="formulario">
+    <h1>Finalizar Pedido</h1>
+    <div class="producto-info" id="productoInfo"></div>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" placeholder="Tu nombre completo">
+
+    <label for="direccion">Dirección de entrega:</label>
+    <input type="text" id="direccion" placeholder="Ej: Calle 123 #45-67">
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" placeholder="Ej: 3001234567">
+
+    <button onclick="enviarPedido()">Hacer Pedido</button>
+  </div>
+
+  <script>
+    const producto = JSON.parse(localStorage.getItem("productoSeleccionado"));
+    const productoInfo = document.getElementById("productoInfo");
+
+    if (producto) {
+      productoInfo.innerHTML = `
+        <h3>${producto.nombre}</h3>
+        <img src="${producto.imagen}" alt="${producto.nombre}">
+      `;
+    } else {
+      productoInfo.innerHTML = "<p>No se seleccionó ningún producto.</p>";
+    }
+
+    function enviarPedido() {
+      const nombre = document.getElementById("nombre").value;
+      const direccion = document.getElementById("direccion").value;
+      const telefono = document.getElementById("telefono").value;
+
+      if (!nombre || !direccion || !telefono || !producto) {
+        alert("Por favor completa todos los campos y selecciona un producto.");
+        return;
+      }
+
+      const mensaje = `Hola, soy ${nombre}%0AQuiero comprar: ${producto.nombre}%0ADirección: ${direccion}%0ATeléfono: ${telefono}`;
+      const numero = "3132680088";
+      window.location.href = `https://wa.me/57${numero}?text=${mensaje}`;
+    }
+  </script>
+</body>
+</html>
+

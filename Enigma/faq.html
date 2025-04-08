@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preguntas Frecuentes - Enigma Code</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('Fondograffiti.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .contenedor {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3em;
+      text-shadow: 0 0 10px #ff0000;
+      margin-bottom: 40px;
+    }
+
+    .faq {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .faq:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .faq h3 {
+      margin: 0;
+    }
+
+    .faq p {
+      display: none;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .menu-derecha {
+      position: fixed;
+      right: 0;
+      top: 200px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 10px;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .menu-derecha a {
+      display: block;
+      color: #fff;
+      margin: 10px 0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>Preguntas Frecuentes</h1>
+
+    <div class="faq" onclick="toggleFAQ(this)">
+      <h3>¿Qué métodos de pago aceptan?</h3>
+      <p>Aceptamos pagos por Nequi, Daviplata, tarjetas débito, crédito y efectivo.</p>
+    </div>
+
+    <div class="faq" onclick="toggleFAQ(this)">
+      <h3>¿Realizan envíos a todo el país?</h3>
+      <p>Sí, hacemos envíos a cualquier parte de Colombia. El valor del envío se calcula según tu ubicación.</p>
+    </div>
+
+    <div class="faq" onclick="toggleFAQ(this)">
+      <h3>¿Puedo cambiar una camiseta si no me queda?</h3>
+      <p>Sí, puedes hacer cambios dentro de los primeros 5 días si la camiseta no ha sido usada ni dañada.</p>
+    </div>
+
+    <div class="faq" onclick="toggleFAQ(this)">
+      <h3>¿Cuánto tiempo tarda el envío?</h3>
+      <p>Depende de tu ubicación, pero normalmente tarda entre 2 a 5 días hábiles.</p>
+    </div>
+
+    <div class="faq" onclick="toggleFAQ(this)">
+      <h3>¿Los productos tienen garantía?</h3>
+      <p>Sí, ofrecemos garantía por defectos de fabricación durante 15 días después de la entrega.</p>
+    </div>
+  </div>
+
+  <div class="menu-derecha">
+    <a href="home.html">Home</a>
+    <a href="sobrenosotros.html">Sobre Nosotros</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="PREGUNTASFRECUENTES(FAQ).html">Preguntas Frecuentes</a>
+    <a href="terminos.html">Términos y Condiciones</a>
+    <a href="carrito.html">Carrito de Compras</a>
+    <a href="checkout_Pago.html">Checkout/Pago</a>
+  </div>
+
+  <script>
+    function toggleFAQ(element) {
+      const p = element.querySelector('p');
+      p.style.display = p.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

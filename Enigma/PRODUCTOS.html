@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos - Enigma Code</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: url('Fondograffiti.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+    }
+
+    .portada {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .portada img {
+      width: 200px;
+      border-radius: 100%;
+      animation: latido 2s infinite;
+    }
+
+    .portada h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3em;
+      margin-top: 20px;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    .camisetas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .camiseta {
+      text-align: center;
+      max-width: 300px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    .camiseta img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .camiseta img:hover {
+      transform: scale(1.05);
+    }
+
+    .camiseta p {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .camiseta button {
+      background-color: #00ff91;
+      border: none;
+      padding: 10px 20px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .camiseta button:hover {
+      background-color: #00cc73;
+    }
+
+    .camiseta video {
+      margin-top: 10px;
+      border-radius: 10px;
+      display: none;
+    }
+
+    .menu-derecha {
+      position: fixed;
+      right: 0;
+      top: 200px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 10px;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .menu-derecha a {
+      display: block;
+      color: #fff;
+      margin: 10px 0;
+      text-decoration: none;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <img src="logotipo.jpg" alt="Logo">
+    <h1>Enigma Code</h1>
+  </div>
+
+  <div class="camisetas">
+    <div class="camiseta">
+      <img src="Camiseta1.jpg" alt="Camiseta 1" onclick="mostrarVideo('video1')">
+      <p>Camiseta negra con estampado de calavera brillante. Vibras streetwear moderno. Tela resistente, corte recto y cómodo.</p>
+      <button onclick="agregarAlCarrito('Camiseta negra con estampado de calavera brillante. Vibras streetwear moderno. Tela resistente, corte recto y cómodo.', 'Camiseta1.jpg')">Comprar</button>
+      <video id="video1" width="100%" controls>
+        <source src="Camiseta1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="camiseta">
+      <img src="Camiseta3.jpg" alt="Camiseta 2" onclick="mostrarVideo('video2')">
+      <p>Estilo urbano con diseño rebelde en tonos oscuros, fondo tipo graffiti. Tela suave 100% algodón.</p>
+      <button onclick="agregarAlCarrito('Estilo urbano con diseño rebelde en tonos oscuros, fondo tipo graffiti. Tela suave 100% algodón.', 'Camiseta3.jpg')">Comprar</button>
+      <video id="video2" width="100%" controls>
+        <source src="Camiseta3.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="camiseta">
+      <img src="Camiseta2.jpg" alt="Camiseta 3" onclick="mostrarVideo('video3')">
+      <p>Camiseta blanca con arte callejero colorido, único y original. Representa la libertad del arte urbano.</p>
+      <button onclick="agregarAlCarrito('Camiseta blanca con arte callejero colorido, único y original. Representa la libertad del arte urbano.', 'Camiseta2.jpg')">Comprar</button>
+      <video id="video3" width="100%" controls>
+        <source src="Camiseta2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="camiseta">
+      <img src="Camiseta4.jpg" alt="Camiseta 4" onclick="mostrarVideo('video4')">
+      <p>Diseño original del rapero colombiano Joes Yawar Cru, con tipografía futurista y detalles inspirados en la cultura hip hop. Edición limitada.</p>
+      <button onclick="agregarAlCarrito('Diseño original del rapero colombiano Joes Yawar Cru, con tipografía futurista y detalles inspirados en la cultura hip hop. Edición limitada.', 'Camiseta4.jpg')">Comprar</button>
+      <video id="video4" width="100%" controls>
+        <source src="Camiseta4.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="menu-derecha">
+    <a href="home.html">Home</a>
+    <a href="sobrenosotros.html">Sobre Nosotros</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="faq.html">Preguntas Frecuentes</a>
+    <a href="terminos.html">Términos y Condiciones</a>
+    <a href="carrito.html">Carrito de Compras</a>
+    <a href="checkout_Pago.html">Checkout/Pago</a>
+  </div>
+
+  <script>
+    function agregarAlCarrito(descripcion, imagen) {
+      const producto = { descripcion: descripcion, imagen: imagen };
+      localStorage.setItem("productoSeleccionado", JSON.stringify(producto));
+      window.location.href = "carrito.html";
+    }
+
+    function mostrarVideo(idVideo) {
+      const videos = document.querySelectorAll("video");
+      videos.forEach(video => video.style.display = "none");
+      const video = document.getElementById(idVideo);
+      if (video) {
+        video.style.display = "block";
+        video.play();
+      }
+    }
+  </script>
+</body>
+</html>
+

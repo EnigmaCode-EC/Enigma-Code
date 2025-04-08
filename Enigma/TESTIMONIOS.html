@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonios - Enigma Code</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('Fondograffiti.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .contenido {
+      margin-left: 200px;
+      padding: 40px 20px;
+    }
+
+    .barra-lateral {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      border-right: 2px solid #ff4747;
+    }
+
+    .barra-lateral a {
+      color: #fff;
+      text-decoration: none;
+      margin: 15px 0;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .barra-lateral a:hover {
+      color: #ff4747;
+    }
+
+    h1 {
+      font-family: 'UnifrakturCook', cursive;
+      text-align: center;
+      font-size: 3em;
+      color: #ff4747;
+      margin-bottom: 30px;
+    }
+
+    .testimonio {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(255, 71, 71, 0.3);
+    }
+
+    .testimonio h3 {
+      margin: 0;
+      color: #ff4747;
+    }
+
+    .testimonio p {
+      color: #ddd;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      background-color: #ff4747;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #ff2a2a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra-lateral">
+    <a href="home.html">Home</a>
+    <a href="sobrenosotros.html">Sobre Nosotros</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="faq.html">Preguntas Frecuentes</a>
+    <a href="terminosycondiciones.html">Términos y Condiciones</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="testimonios.html">Testimonios</a>
+  </div>
+
+  <div class="contenido">
+    <h1>Lo que dicen nuestros clientes</h1>
+
+    <div class="testimonio">
+      <h3>@santi_streetwear</h3>
+      <p>"La camiseta llegó rápido y con un diseño brutal. 10/10 el servicio. ¡Sigan así!"</p>
+    </div>
+
+    <div class="testimonio">
+      <h3>@andreafit</h3>
+      <p>"Me encantó el material, se siente muy cómodo. La atención también fue excelente."</p>
+    </div>
+
+    <div class="testimonio">
+      <h3>@camilo_raplife</h3>
+      <p>"Me gustó mucho el detalle urbano que manejan. Pedí una camiseta y llegó al otro día. Recomendado."</p>
+    </div>
+
+    <div class="cta">
+      <p>¿Quieres dejar tu testimonio?</p>
+      <a href="contacto.html">Contáctanos aquí</a>
+    </div>
+  </div>
+
+</body>
+</html>

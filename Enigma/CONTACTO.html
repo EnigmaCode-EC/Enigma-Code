@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enigma Code | Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('Fondograffiti.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+    }
+    header h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 48px;
+      margin: 0;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      margin-bottom: 100px;
+    }
+    main h2 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .contact-box {
+      background-color: #111;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s;
+    }
+    .contact-box:hover {
+      transform: scale(1.05);
+    }
+    .contact-box a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #ff4c4c;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .contact-box a:hover {
+      background-color: #ff1a1a;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    .sidebar {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 15px 0 0 15px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      margin: 12px 0;
+      text-decoration: none;
+      padding: 8px;
+      background-color: #333;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .sidebar a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contacto Enigma Code</h1>
+    <p>¡Hablemos y haz tu pedido ya!</p>
+  </header>
+
+  <main>
+    <h2>¿Cómo puedes contactarnos?</h2>
+    <p>Queremos que conectes con nosotros de la forma más fácil posible. Aquí te dejamos nuestras formas de contacto. ¡Escríbenos, llámanos o síguenos!</p>
+
+    <div class="contact-info">
+      <div class="contact-box">
+        <h3>WhatsApp 1</h3>
+        <p>316 7403656</p>
+        <a href="https://wa.me/573167403656" target="_blank">Enviar mensaje</a>
+      </div>
+      <div class="contact-box">
+        <h3>WhatsApp 2</h3>
+        <p>313 2680088</p>
+        <a href="https://wa.me/573132680088" target="_blank">Enviar mensaje</a>
+      </div>
+      <div class="contact-box">
+        <h3>Email</h3>
+        <p>enigmacode789@gmail.com</p>
+        <a href="mailto:enigmacode789@gmail.com">Enviar correo</a>
+      </div>
+      <div class="contact-box">
+        <h3>Instagram</h3>
+        <p>@enigma_.code</p>
+        <a href="https://instagram.com/enigma_.code" target="_blank">Ir al perfil</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/573167403656" class="whatsapp-button" target="_blank">💬 Contáctanos</a>
+
+  <!-- Sección derecha de navegación -->
+  <div class="sidebar">
+    <a href="home.html">Home</a>
+    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="faq.html">Preguntas Frecuentes</a>
+    <a href="terminos.html">Términos y Condiciones</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="checkout.html">Checkout</a>
+  </div>
+</body>
+</html>
